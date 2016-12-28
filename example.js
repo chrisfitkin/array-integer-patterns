@@ -1,15 +1,7 @@
-# array-integer-patterns
-
-Extends the JavaScript Array prototype with functions to test for integer patterns
-
-## [View Source](blob/master/index.js)
-
-## Example Usage
-```JavaScript
 require('./array-integer-patterns.js')
 
-/** Sample arrays */
-let testArrays = [
+/** Example arrays */
+let exampleArrays = [
     [1, 2, 3, 4, 7, 10],
     [1, 2, 3, 4, 7, 7, 10],
     [1, 2, 3, 4, 2, 10],
@@ -23,9 +15,11 @@ let testArrays = [
 ];
 
 /** Test arrays and print results */
-testArrays.forEach((arr) => {
+exampleArrays.forEach((arr) => {
+
     console.log('');
     console.log(arr);
+
     arr.isAscending() && console.log(' * isAscending');
     arr.isTrulyAscending() && console.log(' * isTrulyAscending');
     arr.isDescending() && console.log(' * isDescending');
@@ -38,4 +32,3 @@ testArrays.forEach((arr) => {
     /** Implements a custom pattern test */
     arr.hasPattern((a, b) => a !== b) && console.log(' * isAlwaysMoving');
 });
-```
