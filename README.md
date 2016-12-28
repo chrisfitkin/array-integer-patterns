@@ -2,7 +2,7 @@
 
 Extends the JavaScript Array prototype with functions to test for integer patterns
 
-## [View Source](blob/master/index.js)
+## [View Source](index.js)
 
 ## Example Usage
 ```JavaScript
