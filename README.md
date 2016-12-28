@@ -39,3 +39,48 @@ testArrays.forEach((arr) => {
     arr.hasPattern((a, b) => a !== b) && console.log(' * isAlwaysMoving');
 });
 ```
+
+## Example Output
+```
+[ 1, 2, 3, 4, 7, 10 ]
+ * isAscending
+ * isTrulyAscending
+ * isAlwaysMoving
+
+[ 1, 2, 3, 4, 7, 7, 10 ]
+ * isAscending
+
+[ 1, 2, 3, 4, 2, 10 ]
+ * isAlwaysMoving
+
+[ 10, 9, 8, 7, 6 ]
+ * isDescending
+ * isTrulyDescending
+ * isSlow
+ * isAlwaysMoving
+
+[ 10, 9, 9, 8, 7 ]
+ * isDescending
+ * isSlow
+
+[ 10, 9, 11, 6 ]
+ * isAlwaysMoving
+
+[ 1, 2, 2, 3, 2, 3, 4, 4, 5 ]
+ * isSlow
+
+[ 0, 20, 100, 50 ]
+ * isFast
+ * isAlwaysMoving
+
+[ 5, 5, 5, 5, 5 ]
+ * isAscending
+ * isDescending
+ * isSlow
+ * isFlat
+
+[ 2, 4, 16, 256, 65536 ]
+ * isAscending
+ * isTrulyAscending
+ * isExponential
+```
