@@ -83,4 +83,5 @@ testArrays.forEach((arr) => {
  * isAscending
  * isTrulyAscending
  * isExponential
+ * isAlwaysMoving
 ```
