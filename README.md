@@ -85,3 +85,7 @@ testArrays.forEach((arr) => {
  * isExponential
  * isAlwaysMoving
 ```
+
+## License
+
+__MIT__
